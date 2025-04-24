@@ -1,0 +1,174 @@
+header{
+    height: 100vh;
+    background-image: url(img/nikolay-vorobyev-gRQcGV01Rn0-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#filter{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.441);
+    display: flex;
+}
+header h1{
+    margin: auto;
+    font-size: 15vw;
+    color: orangered;
+    font-family: Indie_flower;
+    text-shadow: 5px 5px 5px white;
+
+}
+@font-face {
+    font-family: Indie_flower;
+    src: url(fonts/Indie_Flower/IndieFlower-Regular.ttf);
+}
+body{
+    margin: 0;
+}
+#poem{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 10%;
+    background-color: aqua;
+    align-items: center;
+}
+#poem p{
+    font-size: 2vw;
+    line-height: 1.5;
+    border: 20px solid blanchedalmond;
+    border-radius: 50%;
+    padding: 60px;
+    background-color: chartreuse;
+}
+#poem img{
+    width: 30%;
+    border: 20px groove orangered;
+    
+}
+#priznaki{
+    background-image: url(img/8726786.jpg);
+    background-size: cover;
+    padding: 50px;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+#priznaki h2{
+    font-family: Indie_flower;
+    color: crimson;
+    text-align: center;
+    font-size: 2.2vw;
+    background-color: chocolate;
+    padding: 30px;
+    width: 30%;
+    margin:auto;
+    box-sizing: border-box;
+    border-radius: 30px 30px 0 0;
+}
+#priznaki ul{
+    width: 30%;
+    margin: auto;
+    font-size: 2vw;
+    font-family: Indie_flower;
+    color: rgb(16, 19, 19);
+    background-color: chocolate;
+    padding: 30px;
+    padding-left: 70px;
+    box-sizing: border-box;
+    border-radius: 0 0 30px 30px;
+}
+li::marker{
+    color: orange;
+}
+#calendar table{
+    border: 20px groove orange;
+    padding: 30px;
+    border-spacing: 10px;
+    border-radius: 30px;
+    border-collapse: collapse;
+}
+#calendar td{
+    border: 10px solid chocolate;
+    padding: 30px;
+    text-align: center;
+    font-size: 2vw;
+    transition: all 1s;
+}
+#calendar caption{
+    font-size: 2vw;
+}
+#calendar{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+#calendar img{
+    width: 40%;
+}
+#calendar td:hover{
+background-color: aquamarine;
+cursor: pointer;
+transform: scale(1.2);
+}
+#prazdniki{
+    padding: 70px 50px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/beach-background-with-palm-leaf.jpg);
+    background-size: cover;
+}
+#prazdniki a{
+    width: 70%;
+    padding: 10px 0;
+    border: 10px dotted yellow;
+    background-color: rgba(0, 255, 0, 0.427);
+    text-decoration: none;
+    color: brown;
+    font-size: 2vw;
+    transition: all 1s;
+}
+#prazdniki a:hover{
+    border-style: solid;
+    border-color: darksalmon;
+}
+#gallery{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    background-color: aquamarine;
+}
+#gallery img{
+    width: 22%;
+    height: 500px;
+    object-fit: cover;
+    transition: all 1s;
+}
+#gallery img:hover{
+    transform: scale(1.2);
+}
+#film{
+    padding: 50px;
+    text-align: center;
+}
+#film video{
+    height: 90vh;
+}
+#prezi iframe{
+    width: 100%;
+    height: 700px;
+}
+#sunlight{
+    position: absolute;
+    top:50px;
+    left: 50px;
+    animation: run 5s infinite alternate;
+
+}
+@keyframes run{
+    from{left: 50px;transform: rotate(0);}
+    to{left: 80vw;transform: rotate(720deg);}
+}

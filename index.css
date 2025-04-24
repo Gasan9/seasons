@@ -1,0 +1,80 @@
+body{
+    background-image: url(img/seasons.jpg);
+    background-size: contain;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: aquamarine;
+    margin: 0;
+}
+main{
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.43);
+    padding: 50px;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 5em;
+    color: antiquewhite;
+    font-family: EB;
+    margin-bottom: 15px;
+    
+}
+@font-face {
+    font-family: EB;
+    src: url(fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+nav {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+a{
+    color: bisque;
+    font-size: 3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: EB;
+}
+a:hover{
+    text-decoration: underline;
+}
+#clock{
+    width: 10vw;
+    height: 10vw;
+    border: 10px groove orangered;
+    margin:auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    position: relative;
+}
+#strelka1{
+    position: absolute;
+    width: 40%;
+    height: 8px;
+    background-color: orange;
+    top: calc(50% - 4px);
+    left: 50%;
+    animation: tiktak 60s linear infinite;
+    transform-origin: left;
+    
+}
+#strelka2{
+    position: absolute;
+    width: 20%;
+    height: 8px;
+    background-color: orange;
+    top: calc(50% - 4px);
+    left: 50%;
+    animation: tiktak 3600s linear infinite;
+    transform-origin: left;
+}
+@keyframes tiktak{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
